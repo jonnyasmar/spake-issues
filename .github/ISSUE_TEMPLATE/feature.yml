@@ -1,0 +1,42 @@
+name: Feature request
+description: Something Spake doesn't do that you'd use.
+labels: ["feature"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Requests with a concrete use are the ones that move. None of them come with a date, and some will be a no; you'll hear which.
+
+        Please search the open issues first. A thumbs-up on an existing request counts.
+
+  - type: textarea
+    id: situation
+    attributes:
+      label: What you were trying to do
+      description: The moment you noticed it was missing. What were you recording, or looking for, or trying to do with a note?
+    validations:
+      required: true
+
+  - type: textarea
+    id: request
+    attributes:
+      label: What you'd like Spake to do
+      description: As specific as you can. If it's about the note files, say which file and what should be in it.
+    validations:
+      required: true
+
+  - type: textarea
+    id: workaround
+    attributes:
+      label: What you do instead today
+      description: Another app, a script, or doing without.
+    validations:
+      required: false
+
+  - type: input
+    id: version
+    attributes:
+      label: Spake version and macOS version (optional)
+      placeholder: "1.0.0 on macOS 26.5"
+    validations:
+      required: false

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security problem
+    url: https://spake.app/support#security
+    about: Report vulnerabilities privately to security@spake.app, not in a public issue.
+  - name: License, purchase, or refund
+    url: https://spake.app/support#licenses
+    about: Email support@spake.app from the address you bought with. Please don't post a license key here.

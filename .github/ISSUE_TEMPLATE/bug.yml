@@ -1,0 +1,100 @@
+name: Bug report
+description: Something in Spake didn't work the way it should.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. One person reads these; the details below are what let a bug be fixed in one round trip.
+
+        **This repository is public.** Please don't attach a real note, recording, transcript, screen text, or a screenshot of one. If a particular note is involved, describe it, or make a throwaway note that shows the same problem.
+
+        **Security problems go to security@spake.app**, not here.
+
+  - type: input
+    id: version
+    attributes:
+      label: Spake version
+      description: Spake ▸ About Spake. Include the build number in brackets if it's shown.
+      placeholder: "1.0.0"
+    validations:
+      required: true
+
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+      description: Apple menu ▸ About This Mac.
+      placeholder: "macOS 26.5"
+    validations:
+      required: true
+
+  - type: input
+    id: mac
+    attributes:
+      label: Mac model
+      description: Apple menu ▸ About This Mac. The chip matters most.
+      placeholder: "MacBook Air, M1, 16 GB"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: What you did
+      description: Step by step, starting from something like "I opened Spake".
+      placeholder: |
+        1. Double-tapped right Option with Safari in front
+        2. Talked for about a minute
+        3. Double-tapped again
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-actual
+    attributes:
+      label: What you expected, and what happened instead
+      description: Copy any message Spake showed, word for word.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: How often
+      options:
+        - Every time
+        - Sometimes
+        - Once so far
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: on-disk
+    attributes:
+      label: What stayed on disk
+      description: Check what you can see. Recordings that haven't reached your notes folder wait in ~/Library/Application Support/Spake/Recovery.
+      options:
+        - label: The note's folder appeared in my notes folder
+        - label: The folder has an audio.wav
+        - label: The folder has a recording.mp4
+        - label: The note has a transcript
+        - label: There's a folder for it in ~/Library/Application Support/Spake/Recovery
+        - label: Nothing was saved at all
+
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Report a Problem zip, or crash report
+      description: |
+        Help ▸ Report a Problem… in Spake builds a zip of logs and diagnostics and sends nothing by itself; save it, check it, then drag it here. If Spake crashed, also attach the newest SpakeApp-<date>.ips from ~/Library/Logs/DiagnosticReports, renamed to .txt (GitHub doesn't accept .ips). Drag files into this box.
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Anything else
+      description: Notes folder on an external drive or in iCloud? System audio on? A particular language? Area recording? Anything unusual about the setup.
+    validations:
+      required: false
