@@ -4,8 +4,7 @@ This is where bugs and feature requests for [Spake](https://spake.app) are track
 public. Spake is a Mac app for voice notes that keep the screen recording, saved as
 plain files. Its source code is private; this repository holds issues only.
 
-One person reads everything here, the same one who wrote the app. Expect a reply
-within two business days. <!-- Same promise as spake.app/support; change both together. -->
+One person reads everything here, the same one who wrote the app.
 
 ## Before you open an issue
 
