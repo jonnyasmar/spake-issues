@@ -8,7 +8,7 @@ One person reads everything here, the same one who wrote the app.
 
 ## Before you open an issue
 
-- **Read the [known limitations](https://github.com/jonnyasmar/spake-issues/issues/1)**
+- **Read the [known limitations](https://github.com/Hearthworks-Apps/spake-issues/issues/1)**
   pinned at the top of the issue list. Your problem may already be written down, with a
   workaround.
 - **Search the open issues.** A thumbs-up on an existing issue counts; a duplicate

@@ -37,6 +37,6 @@ body:
     id: version
     attributes:
       label: Spake version and macOS version (optional)
-      placeholder: "1.0.0 on macOS 26.5"
+      placeholder: "1.0.4 on macOS 26.5"
     validations:
       required: false

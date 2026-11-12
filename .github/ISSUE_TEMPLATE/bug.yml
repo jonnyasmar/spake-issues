@@ -16,7 +16,7 @@ body:
     attributes:
       label: Spake version
       description: Spake ▸ About Spake. Include the build number in brackets if it's shown.
-      placeholder: "1.0.0"
+      placeholder: "1.0.4 (910)"
     validations:
       required: true
 
